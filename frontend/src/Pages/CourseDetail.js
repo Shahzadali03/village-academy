@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams, Navigate } from 'react-router-dom';
 import {
-    FaArrowLeft, FaClock, FaTag, FaGraduationCap, FaCheckCircle,
+    FaClock, FaTag, FaGraduationCap, FaCheckCircle,
     FaQuestionCircle, FaArrowRight, FaLayerGroup, FaUsers,
     FaBookOpen, FaClipboardList, FaChalkboardTeacher, FaUserGraduate,
     FaCalendarAlt, FaLanguage, FaChevronDown

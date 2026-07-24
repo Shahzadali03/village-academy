@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import {
     FaGraduationCap, FaUsers, FaChalkboardTeacher,
     FaQuoteLeft, FaCheckCircle

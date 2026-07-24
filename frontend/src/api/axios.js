@@ -1,6 +1,5 @@
 import axios from "axios";
 import { BASE_URL } from "../Config";
-import { useNavigate } from "react-router-dom";
 
 
 const api = axios.create({
@@ -23,7 +22,7 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response && error.response.status == 401) {
+    if (error.response && error.response.status === 401) {
       console.log('Unauthorized! Redirecting...');
       window.location.href ='/login'
     }

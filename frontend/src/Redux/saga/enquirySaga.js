@@ -1,6 +1,5 @@
 import { takeLatest, call, put } from 'redux-saga/effects';
 import toast from 'react-hot-toast';
-import axios from 'axios';
 import api from '../../api/axios';
 
 import { 

@@ -2,9 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
-import logoLogin from '../assets/images/logo-login.png';
 import logo from '../assets/images/logo.png'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { loginRequest } from '../Redux/action/authAction';
 import { Toaster } from 'react-hot-toast';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
@@ -16,7 +15,6 @@ const Login = () => {
     const [rememberMe, setRememberMe] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
 
-    const { user, success } = useSelector(state => state.auth);
     const dispatch = useDispatch();
 
     const handleSubmit = (event) => {

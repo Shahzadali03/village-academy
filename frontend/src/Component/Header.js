@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { Dropdown } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import profileImg from '../assets/images/profile.png';
-import AdminLogo from './AdminLogo';
 
 const Header = ({ sidebarOpen, onToggleSidebar }) => {
   const { user } = useSelector((state) => state.auth);

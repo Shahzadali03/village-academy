@@ -1,7 +1,6 @@
 import {takeEvery, call, put} from 'redux-saga/effects';
 import toast from 'react-hot-toast';
 import api from '../../api/axios';
-import axios from 'axios';
 import { 
     ADD_STUDENT_REQUEST,
     DELETE_STUDENT_REQUEST,

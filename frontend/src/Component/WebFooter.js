@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import {
     FaPhone, FaEnvelope, FaMapMarkerAlt,
     FaFacebook, FaTwitter, FaInstagram, FaLinkedin,
-    FaArrowRight, FaGraduationCap
 } from 'react-icons/fa';
 import logo from '../assets/images/logo.png';
 
