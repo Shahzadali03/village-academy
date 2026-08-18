@@ -126,7 +126,7 @@ const Admissions = () => {
         student: {
           name: "",
           father_name: "",
-          age: "",
+          age: null,
           gender: "",
           class_id: "",
           phone_number: "",
@@ -172,8 +172,8 @@ const Admissions = () => {
         ...prev,
         student: {
           ...prev.student,
-          [name]: value
-        }
+          [name]: name === 'age' ? (value === '' ? '' : Number(value)) : value,
+        },
       }));
     } else {
       setApplicationForm((prev) => ({
@@ -186,11 +186,18 @@ const Admissions = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const payload = {
+      ...applicationForm,
+      student: {
+        ...applicationForm.student,
+        age: Number(applicationForm.student.age),
+      },
+    };
+
     if (isEditing) {
-      dispatch(updateAdmissionsRequest(selectedApplication.id, applicationForm))
-      console.log(applicationForm)
+      dispatch(updateAdmissionsRequest(selectedApplication.id, payload));
     } else {
-      dispatch(addAdmissionsRequest(applicationForm))
+      dispatch(addAdmissionsRequest(payload));
     }
 
     handleCloseModal();
@@ -433,9 +440,9 @@ const Admissions = () => {
                         required
                       >
                         <option value="">Select Gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
                       </Form.Select>
                     </Form.Group>
                   </Col>

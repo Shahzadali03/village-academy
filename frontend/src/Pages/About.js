@@ -36,7 +36,7 @@ const About = () => {
                                 Building Excellence in Education <span className="highlight">Since 2023</span>
                             </h2>
                             <p>
-                               Founded in 2023, The Village Academia is committed to providing quality education that fosters academic excellence and strong character. We offer tuition from KG to Class 12, along with spoken English, computer skills, web development, and digital marketing courses. Our goal is to empower students with the knowledge, skills, and confidence to succeed in life.
+                                Founded in 2023, The Village Academia is committed to providing quality education that fosters academic excellence and strong character. We offer tuition from KG to Class 12, along with spoken English, computer skills, web development, and digital marketing courses. Our goal is to empower students with the knowledge, skills, and confidence to succeed in life.
                             </p>
                             <div className="story-features">
                                 <div className="feature-item">
@@ -152,29 +152,30 @@ const About = () => {
                             <div className="quote-icon">
                                 <FaQuoteLeft />
                             </div>
-                            <h2>A Message from Our Founder</h2>
+                            <h2>A Vision of Founder</h2>
                             <div className="message-content">
                                 <p>
-                                    <strong>"Alif se Maloom tak"</strong> - From the beginning to complete knowledge. This philosophy
-                                    has guided The Village Academia since we began in 2023. When I started this journey,
-                                    my vision was simple yet profound: to create an educational environment where every student,
-                                    regardless of their starting point, could achieve excellence.
+                                    The name <strong>"The Village Academia"</strong> is inspired by the timeless
+                                    idea that learning is shaped not only by classrooms, but also
+                                    by the environment, community, culture, and experiences that
+                                    surround a child.
                                 </p>
                                 <p>
-                                    Education is not just about academic scores; it's about building character, instilling confidence,
-                                    and preparing young minds for the challenges of tomorrow. At The Village Academia, we don't just
-                                    teach subjects – we nurture dreams, build foundations, and create pathways to success.
+                                    In <strong>Islamic tradition,</strong> the early childhood of the Prophet
+                                    Muhammad ﷺ reflects the value of learning through a rich
+                                    environment, authentic language, community life, and real
+                                    world experiences. This inspires our belief that education
+                                    should extend beyond textbooks and classrooms.
                                 </p>
                                 <p>
-                                    Our success stories speak for themselves. From students who struggled with basic concepts to those
-                                    who topped their board exams, from young learners taking their first steps in education to
-                                    professionals mastering new skills – each achievement fills me with immense pride and reinforces
-                                    my commitment to quality education.
+                                    At <strong>The Village Academia,</strong> we combine structured academic
+                                    learning with practical experiences, modern teaching
+                                    methods, STEM exploration, communication, creativity, and
+                                    real-world problem-solving.
                                 </p>
                                 <p>
-                                    I invite you to join our family and experience the difference that personalized attention,
-                                    expert teaching, and genuine care can make in your educational journey. Together, let's build
-                                    a brighter future, one student at a time.
+                                    Because true education is not simply about memorising
+                                    information— <strong>it is about experiencing, understanding, thinking, growing, and becoming prepared for life.</strong>
                                 </p>
                             </div>
                             <div className="message-signature">

@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   Container, Row, Col, Card, Table, Form,
-  Badge, Spinner
+  Badge, Spinner, Alert
 } from 'react-bootstrap';
 import { Toaster } from 'react-hot-toast';
 import { addFeeRequest, getFeeRequest, updateFeeRequest } from '../Redux/action/feeAction';
@@ -34,7 +34,8 @@ const Fee = () => {
   const {
     feeList,
     loading,
-    success,
+    savingFeeId,
+    error,
     totalCollection,
     pendingCollection,
     paidCount,
@@ -66,7 +67,7 @@ const Fee = () => {
 
   useEffect(() => {
     dispatch(getFeeRequest(selectedPeriod));
-  }, [dispatch, success, selectedPeriod]);
+  }, [dispatch, selectedPeriod]);
 
   const filteredFees = useMemo(() => {
     return feeList.filter((fee) => {
@@ -96,10 +97,12 @@ const Fee = () => {
   const currentFees = filteredFees.slice(indexOfFirstRecord, indexOfLastRecord);
   const totalPages = Math.ceil(filteredFees.length / studentsPerPage) || 1;
 
-  const handleFeeStatus = (id) => {
-    const isPaid = window.confirm('Mark this fee as paid?');
-    if (isPaid) {
-      dispatch(addFeeRequest(id));
+  const handleFeeStatus = (fee) => {
+    if (fee?.isPaid) return;
+
+    const confirmed = window.confirm(`Mark ${fee?.student?.name || 'this student'}'s fee as paid?`);
+    if (confirmed) {
+      dispatch(addFeeRequest(fee.id, selectedPeriod));
     }
   };
 
@@ -114,7 +117,7 @@ const Fee = () => {
       return;
     }
 
-    dispatch(updateFeeRequest(fee.id, { amount: nextAmount }));
+    dispatch(updateFeeRequest(fee.id, { amount: nextAmount }, selectedPeriod));
   };
 
   return (
@@ -128,6 +131,12 @@ const Fee = () => {
           title="Fees Management"
           subtitle="Track monthly collections, pending dues, and student payment status"
         />
+
+        {error && (
+          <Alert variant="danger" className="mb-3">
+            {error}
+          </Alert>
+        )}
 
         <AdminFilterBar
           searchValue={search}
@@ -255,9 +264,12 @@ const Fee = () => {
                   </thead>
                   <tbody>
                     {currentFees.length > 0 ? (
-                      currentFees.map((fee) => (
+                      currentFees.map((fee) => {
+                        const isSaving = savingFeeId === fee?.id;
+
+                        return (
                         <tr key={fee?.id}>
-                          <td className="fw-medium">#{fee?.id}</td>
+                          <td className="fw-medium">#{String(fee?.id || '').slice(-6)}</td>
                           <td>{fee?.student?.name}</td>
                           <td>{fee?.student?.father_name}</td>
                           <td>
@@ -280,7 +292,7 @@ const Fee = () => {
                                 className="fee-amount-input"
                                 defaultValue={fee?.amount ?? 0}
                                 key={`${fee?.id}-${fee?.amount}-${fee?.isPaid}`}
-                                disabled={Boolean(fee?.isPaid)}
+                                disabled={Boolean(fee?.isPaid) || isSaving}
                                 onBlur={(event) => handleAmountSave(fee, event.target.value)}
                                 onKeyDown={(event) => {
                                   if (event.key === 'Enter') {
@@ -303,13 +315,17 @@ const Fee = () => {
                               type="switch"
                               id={`fee-switch-${fee?.id}`}
                               className="fee-switch"
-                              onChange={() => handleFeeStatus(fee?.id)}
+                              onChange={() => handleFeeStatus(fee)}
                               checked={Boolean(fee?.isPaid)}
-                              disabled={Boolean(fee?.isPaid)}
+                              disabled={Boolean(fee?.isPaid) || isSaving}
                             />
+                            {isSaving && (
+                              <Spinner animation="border" size="sm" className="ms-2" />
+                            )}
                           </td>
                         </tr>
-                      ))
+                        );
+                      })
                     ) : (
                       <tr>
                         <td colSpan="8" className="text-center py-5 text-muted">

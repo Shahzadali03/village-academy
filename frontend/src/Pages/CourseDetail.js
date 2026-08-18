@@ -107,7 +107,7 @@ const CourseDetail = () => {
                                 <div className="detail-block">
                                     <div className="block-heading">
                                         <FaUserGraduate />
-                                        <h2>Who Is This For?</h2>
+                                        <h2>Who Is This Programme For? </h2>
                                     </div>
                                     <div className="who-for-grid">
                                         {course.whoFor.map((item) => (
@@ -127,7 +127,9 @@ const CourseDetail = () => {
                                         <h2>Detailed Curriculum</h2>
                                     </div>
                                     <p className="block-intro">
-                                        A clear module-by-module breakdown so you know exactly what you will study and practice.
+                                        A developmentally appropriate learning journey that builds strong
+                                        foundations through exploration, understanding, application,
+                                        reasoning, and innovation.
                                     </p>
                                     <div className="modules-list">
                                         {course.modules.map((module, index) => (
@@ -198,7 +200,7 @@ const CourseDetail = () => {
                                         <h2>Learning Outcomes</h2>
                                     </div>
                                     <p className="block-intro">
-                                        By completing this program, learners typically achieve the following results:
+                                        By the end of the programme, learners develop:
                                     </p>
                                     <ul className="feature-check-list">
                                         {course.outcomes.map((item) => (

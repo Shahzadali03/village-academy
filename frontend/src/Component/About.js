@@ -13,9 +13,13 @@ const About = () => {
                             Achieve Your Academic <span className="highlight">Goals with Us</span>
                         </h2>
                         <p>
-                            We specialize in providing high-quality tuition for students from kindergarten to class 12th.
-                            Our experienced teachers focus on individual student needs across all age groups, helping young children
-                            build strong foundations and older students excel in board exams and competitive entrance tests.
+                            We support learners from Kindergarten to Class 12, along with
+                            students preparing for competitive examinations and
+                            professional skills development. <br />
+                            Through expert guidance, personalised support, and
+                            structured practice, we help students build confidence, think
+                            critically, solve problems, and achieve their academic and
+                            future goals.
                         </p>
                         <div className="skills-features">
                             <div className="feature-item">

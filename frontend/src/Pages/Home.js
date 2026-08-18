@@ -24,9 +24,13 @@ const Home = () => {
                                 <span className="highlight">Expert Teachers</span>
                             </h1>
                             <p>
-                                At The Village Academia, we provide comprehensive tuition services for students from KG to Class 12th, plus professional courses 
-                                in Spoken English, Computer Skills, Web Development, and Digital Marketing. Our expert teachers help students of all ages build strong 
-                                foundations, excel in their studies, and gain valuable professional skills for career success.
+                                At The Village Academia, we provide modified learning
+                                support from <b>Kindergarten to Class 12</b>, along with specialized
+                                preparation for <b>One-Paper MCQs, CSS, PMS, English
+                                Grammar & Composition,</b> and <b>Essay Writing</b>.<br />
+                                We also offer practical professional courses in <b>Spoken
+                                English, Computer Skills, Web Development, and Digital
+                                Marketing.</b>
                             </p>
                             <div className="hero-buttons">
                                 <Link to="/admission-form" className="btn-primary">

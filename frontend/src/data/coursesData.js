@@ -15,7 +15,7 @@ export const tuitionClasses = [
         category: 'tuition',
         title: 'Primary Classes (KG to 5th)',
         image: primaryImg,
-        description: 'Foundation building for young learners with focus on Mathematics, English, Urdu, and Science. Fun learning activities and homework support included.',
+        description: 'At The Village, our Primary Programme builds a strong academic foundation through STEM- based learning—Science, Technology, Engineering, and Mathematics—where students.',
         subjects: ['Mathematics', 'English', 'Urdu', 'Science'],
         badge: 'Foundation Level',
         duration: 'Ongoing / Academic Year',
@@ -25,9 +25,9 @@ export const tuitionClasses = [
         level: 'KG – 5th',
         language: 'English & Urdu',
         whoFor: [
-            'Children from KG to Class 5th',
-            'Students who need homework and concept support',
-            'Parents looking for a caring, structured learning environment',
+            'Ages 4–11 | Kindergarten to Class 5',
+            'Curious learners who thrive through hands-on, STEM-based exploration',
+            'Children developing creativity, critical thinking, problem-solving, and independent learning skills',
         ],
         highlights: [
             { label: 'Class Strength', value: 'Small Batches' },
@@ -36,35 +36,36 @@ export const tuitionClasses = [
             { label: 'Support', value: 'Parent Updates' },
         ],
         features: [
-            'Age-appropriate interactive teaching with stories, visuals, and games',
-            'Daily homework help and guided practice worksheets',
-            'Phonics and early reading support for stronger literacy',
-            'Small class strength so every child gets personal attention',
-            'Friendly environment that builds confidence and curiosity',
-            'Regular short tests to track progress gently',
+            'Age-appropriate, child-centred learning that grows with each child. ',
+            'Hands-on STEM learning through exploration, experiments, projects, and problem-solving.',
+            'Learning beyond the classroom, connecting school, home, and the world around children.',
+            'Personalised support according to each child’s pace and needs.',
+            'A positive environment that builds confidence, curiosity, creativity, and independence.',
+            'Meaningful practice and feedback without excessive homework or rote learning.',
         ],
         outcomes: [
-            'Strong foundation in Mathematics, English, Urdu, and Science',
-            'Improved reading fluency, writing clarity, and vocabulary',
-            'Better classroom confidence and study habits',
-            'Ready transition into middle-class academic demands',
+            'Strong foundations in Mathematics, English, Urdu, and Science.',
+            'Curiosity and confidence to explore, ask questions, and learn independently.',
+            'Critical thinking and problem-solving skills through hands-on and STEM-based learning.',
+            'The ability to apply knowledge to real-life situations and new challenges.',
+            'A strong foundation for Middle School and more complex academic learning.'
         ],
         modules: [
             {
-                title: 'Mathematics Foundations',
-                detail: 'Number sense, counting, place value, addition, subtraction, multiplication tables, and basic problem-solving through practical examples.',
+                title: 'Mathematics & Logical Thinking',
+                detail: 'Building number sense, mathematical understanding, reasoning, and problem-solving through hands-on and real-life activities. ',
             },
             {
-                title: 'English Language Skills',
-                detail: 'Phonics, spelling, vocabulary building, sentence writing, reading comprehension, and spoken expression for everyday communication.',
+                title: 'English Communication & Literacy ',
+                detail: 'Developing phonics, reading, vocabulary, grammar, writing, comprehension, and spoken communication.',
             },
             {
-                title: 'Urdu Reading & Writing',
-                detail: 'Letter recognition, fluent reading practice, handwriting, and simple comprehension passages suitable for each grade level.',
+                title: 'Urdu Language & Literacy ',
+                detail: 'Building strong foundations in Urdu reading, writing, vocabulary, comprehension, and communication.',
             },
             {
-                title: 'Science Exploration',
-                detail: 'Activity-based introduction to living things, environment, materials, and everyday science concepts that spark curiosity.',
+                title: 'Science & STEM Exploration ',
+                detail: 'Learning through observation, experiments, hands-on activities, creative problem-solving, and innovation.',
             },
         ],
         methodology: [
@@ -93,11 +94,18 @@ export const tuitionClasses = [
             },
         ],
         overview: `
-            <p>The Primary Classes program at The Village Academia is crafted for young learners from Kindergarten to Class 5th. At this stage, children need more than syllabus coverage — they need confidence, curiosity, and strong basics that will support every future subject.</p>
-            <p>Our teachers use warm, child-friendly methods: storytelling, games, worksheets, phonics practice, and guided homework help. Lessons are short, structured, and interactive so students stay engaged while still learning essential academic skills.</p>
-            <p>Each child is guided according to their pace. We strengthen Math, English, Urdu, and Science through clear explanation, daily revision, and gentle assessments. Parent communication is also prioritized so learning continues smoothly at home.</p>
+            <p>The Primary Programme at The Village Academia is designed for learners from 
+            Kindergarten to Class 5. Our child-centred, <b>STEM-based approach</b> helps children learn 
+            through <b>exploration, hands-on activities, experiments, projects, and guided practice.</b> </p>
+            <p>We build strong foundations in <b>Mathematics, English, Urdu, and Science</b> while 
+            developing curiosity, confidence, creativity, critical thinking, and problem-solving skills. 
+            As children grow, learning progresses from <b>concrete experiences to logical thinking, 
+            abstract understanding, and independent problem-solving.</b></p>
             <h3>Why This Program Matters</h3>
-            <p>Early learning gaps often become bigger challenges in middle and secondary classes. By building clear foundations now, students become better readers, more confident speakers, and stronger problem-solvers for Class 6th and beyond.</p>
+            <p>Our programme grows with each child’s development, guiding them from hands-on 
+            exploration to independent thinking and innovation. It prepares them for <b>real-life 
+            challenges, future academic success,</b> and more <b>complex learning</b> in Middle School and 
+            beyond. </p>
         `,
     },
     {
@@ -207,9 +215,9 @@ export const tuitionClasses = [
         level: '9th – 12th',
         language: 'English (Urdu support available)',
         whoFor: [
-            'SSC & HSSC students aiming for high board marks',
-            'Pre-Medical students preparing for MDCAT',
-            'Pre-Engineering students preparing for ECAT',
+            'Students aged approximately 14–18 years from Class 9 to 12.',
+            'Learners preparing for board examinations, entrance tests, and future academic pathways.',
+            'Students seeking stronger subject knowledge, English skills, critical thinking, and independent learning abilities.',
         ],
         highlights: [
             { label: 'Streams', value: 'Medical & Engineering' },
@@ -275,11 +283,21 @@ export const tuitionClasses = [
             },
         ],
         overview: `
-            <p>Secondary Classes (9th–12th) at The Village Academia are designed for serious board and entrance-test preparation. Students receive complete syllabus coverage along with continuous written practice so they walk into exams with strategy — not stress.</p>
-            <p>We run specialized streams for Pre-Medical and Pre-Engineering. Medical aspirants receive stronger Biology focus with MDCAT-style drilling, while Engineering aspirants intensify Mathematics and Physics for ECAT readiness.</p>
-            <p>Teaching is practical and performance-driven: concept explanation, example problems, timed quizzes, past papers, and feedback loops. Teachers highlight frequent board mistakes, high-scoring answer formats, and time planning for long papers and MCQs.</p>
+            <p>The Secondary Programme at <strong>The Village Academia</strong> is designed for students 
+            from <strong>Class 9 to 12</strong>, supporting board examinations, entrance tests, and future 
+            academic pathways.</p>
+            <p>Our approach combines <b>deep conceptual understanding, structured 
+            practice, critical thinking, and exam readiness.</b> Students learn through clear 
+            explanations, problem-solving, written practice, assessments, past papers, 
+            and personalised feedback.</p>
+            <p>We offer specialised pathways in <b>Pre-Medical, Pre-Engineering, Humanities, 
+            and FA,</b> along with <b>Special English Improvement</b> for students who want to 
+            strengthen their grammar, vocabulary, reading, writing, and communication 
+            skills.</p>
             <h3>Who Succeeds in This Program</h3>
-            <p>Students who attend regularly, attempt weekly assessments, and follow revision plans usually see clear improvement within a few months — especially in weak numerical and writing-heavy subjects.</p>
+            <p>Students are guided according to their academic goals, developing the 
+            knowledge, confidence, and independent learning skills needed for 
+            <b>examinations, higher education, and future careers. </b></p>
         `,
     },
 ];
